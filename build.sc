@@ -29,11 +29,10 @@ import $ivy.`com.lihaoyi::mill-contrib-bloop:$MILL_VERSION`
 /*
   [scalablyTyped](https://github.com/lolgab/mill-scalablytyped)
 
-  Provides module `ScalablyTyped` which on initialization scans directories
-  `package.json` and `node_modules`, converts any libraries found, and adds them 
-  to `ivyDeps`. Include the `ScalablyTyped` module as a module dependency.
+  Provides the `ScalablyTyped` module, which on initialization scans 
+  `package.json` and `node_modules`, converts any libraries found, and adds them to `ivyDeps`. 
 
-  Configs: 
+  Notable Configs: 
     scalablyTypedBasePath = os.pwd
     scalablyTypedIgnoredLibs = [], 
     scalablyTypedFlavour = Flavor.Normal
@@ -43,7 +42,7 @@ import $ivy.`com.github.lolgab::mill-scalablytyped::latest.release`, com.github.
 /*
   [mill-bundler](https://github.com/nafg/mill-bundler)
 
-  Configs:
+  Notable Configs:
     webpackLibraryName
     jsDeps
 */
