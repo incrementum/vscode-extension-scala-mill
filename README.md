@@ -43,7 +43,7 @@ mill app.fastOpt # builds the development version of the extension at `./out/app
 2. **Open Command Panel.** In the new vscode window, open the command panel with "**Cmd+Shift+P**"
 3. **Invoke the Extension.** On the command panel, locate the "Hello World" extension and invoke it
 4. **Observe the Extension's Action.** Notice the pop-up information panel at the bottom-right corner, displaying the "Hello World!" message
-5. **Debug the Extension.** Add a breakpoint in the `showHello` function and a corresponding breakpoint at the function entry point in `./out/app/fastOpt.dest/out.js`. Start debugging "**F5**". When the at breakpoint in `out.js`, continue to the breakpoint in the scala code.
+5. **Debug the Extension.** Add a breakpoint in the `showHello` function. Start the "Extension Host" with debugging enabled "**F5**". Invoke the extension as described above and the execution will pause at the breakpoint. 
 
 #### Develop new extension behavior:
 
