@@ -12,7 +12,7 @@ ported to **Scala** with **Mill**, leveraging [mill-scalablyTyped](https://githu
 
 Requirements:
 
-The integration with [vscode's extension api](https://code.visualstudio.com/api) relies on the [npm](https://www.npmjs.com/) package manager and the subsequent installation of [typescript](https://www.typescriptlang.org/) and the vscode api in the base directory of the repository:
+The integration with [vscode's extension api](https://code.visualstudio.com/api) relies on the [npm](https://www.npmjs.com/) package manager and the subsequent installation of [typescript](https://www.typescriptlang.org/) and the vscode api:
 
 ```sh
  sudo apt install nodejs npm # installing on ubuntu
