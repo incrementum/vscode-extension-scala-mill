@@ -1,0 +1,26 @@
+{
+  "name": "vscmill",
+  "displayName": "vscmill",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/app/fastOpt.dest/out.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscmill.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "dependencies": {
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.1.6"
+  }
+}
