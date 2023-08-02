@@ -48,7 +48,7 @@ mill app.fastOpt # builds the development version of the extension at `./out/app
 
 - Refer to [vscode's Extension API](https://code.visualstudio.com/api)
 
-Privately distribute or publish to the extension marketplace:
+#### Privately distribute or publish to the extension marketplace:
 
 - Refer to [Publishing Extensions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)
 
