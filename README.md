@@ -34,7 +34,10 @@ code ./build.sc # become familiar with `scalablytyped` and `mill-builder` follow
 
 #### Build the extension:
 ```sh
-mill app.fastOpt # builds the development version of the extension at `./out/app/fastOpt.dest/out.js`, which is also referenced by vscode's launch configuration, see above. The build relies on the `scalablyTypedModule`` which generates scalajs facade libraries at the local ivy cache for the module dependencies listed in `package.json` and also implicitly includes the respective `jsDeps`. 
+mill app.fastOpt # builds the development version of the extension at `./out/app/fastOpt.dest/out.js`, which is also referenced by vscode's launch configuration, see above. The build relies on the `scalablyTypedModule`` which generates scalajs facade libraries at the local ivy cache for the module dependencies listed in `package.json` and also implicitly includes the respective `jsDeps`.
+
+# alternatively, continuously build the application, watching for changes:
+mill -w app.fastOpt
 ```
 
 #### Run and test the extension interactively while developing:
