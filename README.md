@@ -10,13 +10,13 @@ ported to **Scala** with **Mill**, leveraging [mill-scalablyTyped](https://githu
 
 ## Getting Started
 
-#### Requirements
-
 Clone this repository:
 
 ```
 git clone https://github.com/incrementum/vscode-extension-scala-mill.git
 ```
+
+#### Requirements
 
 Currently, a component of this build, ```mill-bundler```, does not yet work with mill version 0.11, so this project requires mill:0.10.2:
 ```sh
