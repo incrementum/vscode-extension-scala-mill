@@ -12,12 +12,25 @@ ported to **Scala** with **Mill**, leveraging [mill-scalablyTyped](https://githu
 
 #### Requirements
 
+Clone this repository:
+
+```
+git clone 
+```
+
+Currently, a component of this build, ```mill-bundler```, does not yet work with mill version 0.11, so this project requires mill:0.10.2:
+```sh
+cs install mill:0.10.12 # using coursier to install mill version 0.10.12
+mill --version
+```
+
 The integration with [vscode's extension api](https://code.visualstudio.com/api) relies on the [npm](https://www.npmjs.com/) package manager and the subsequent installation of [typescript](https://www.typescriptlang.org/) and the vscode api:
 
 ```sh
  sudo apt install nodejs npm # installing on ubuntu
  npm install # run in repo base directory; installs packages specified in `package.json`, which include `typescript` and `vscode`, underneath a new `npm_modules` directory
 ```
+
 
 #### Inspect the extension's configuration and vscode's launch configuration:
 ```sh
