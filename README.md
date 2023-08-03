@@ -1,9 +1,10 @@
 # vscode-extension-scala-mill: helloworld-minimal
 
 **VScode** 'Hello World' **Extension**, written in **Scala** and built with **Mill**. 
+##
 
 **Keywords:** vscode, vscode extension, scala, scalajs, mill, scalablytyped, mill-builder
-
+##
 **Credits:** This project ports Microsoft's vscode extension [```helloworld-minimal-sample```](https://github.com/Microsoft/vscode-extension-samples/tree/main/helloworld-minimal-sample)
 to **Scala** with **Mill**, leveraging [mill-scalablyTyped](https://github.com/lolgab/mill-scalablytyped) (for deriving scala facades to vscode's npm-based api) and [mill-bundler](https://github.com/nafg/mill-bundler) (for bundling of scalajs-derived artifacts).
 
