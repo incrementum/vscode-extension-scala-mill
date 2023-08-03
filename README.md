@@ -52,6 +52,8 @@ mill app.fastOpt # builds the development version of the extension at `./out/app
 # alternatively, continuously build the application, watching for changes:
 mill -w app.fastOpt
 ```
+> **_NOTE:_** Some runs of ```mill app.fastOpt``` may take longer because scalablytyped re-generates the scalajs facade libraries for the npm library dependencies if it detectes changes to the ```package.json``` or ```build.sc``` file. 
+
 
 #### Run and test the extension interactively while developing:
 
