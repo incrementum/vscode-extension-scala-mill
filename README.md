@@ -11,10 +11,12 @@ to **Scala** with **Mill**, leveraging [mill-scalablyTyped](https://github.com/l
 
 ## Getting Started
 
-Clone this repository
+Clone this repository and browse its contents with vscode:
 
 ```
 git clone https://github.com/incrementum/vscode-extension-scala-mill.git
+cd vscode-extension-scala-mill
+code .
 ```
 
 #### Requirements:
