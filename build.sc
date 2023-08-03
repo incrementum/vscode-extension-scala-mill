@@ -29,8 +29,8 @@ import $ivy.`com.lihaoyi::mill-contrib-bloop:$MILL_VERSION`
 /*
   [scalablyTyped](https://github.com/lolgab/mill-scalablytyped)
 
-  Provides the `ScalablyTyped` module, which on initialization scans 
-  `package.json` and `node_modules`, converts any libraries found, and adds them to `ivyDeps`. 
+  Provides the `ScalablyTyped` module, which on initialization scans `package.json` and `node_modules`, 
+  converts any libraries found to scala.js facades, and adds them to ivy's local cache and `ivyDeps`.
 
   Notable Configs: 
     scalablyTypedBasePath = os.pwd
