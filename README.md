@@ -26,6 +26,7 @@ code .
 cs install mill:0.10.12 # using coursier to install mill version 0.10.12
 mill --version
 ```
+Watch this repository for updates.
 
 **[npm, typescript, vscode api]** The integration with [vscode's extension api](https://code.visualstudio.com/api) relies on the [npm](https://www.npmjs.com/) package manager and the subsequent installation of [typescript](https://www.typescriptlang.org/) and the vscode api:
 
