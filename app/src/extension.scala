@@ -25,7 +25,7 @@ object extension:
             .asInstanceOf[Dispose]
         )
     }
-    println( "millvsc extension activated." )
+    println( "vscmill extension activated." )
 
   /**
    * Deactivate extension
