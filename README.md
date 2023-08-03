@@ -10,7 +10,7 @@ to **Scala** with **Mill**, leveraging [mill-scalablyTyped](https://github.com/l
 
 ## Getting Started
 
-Clone this repository:
+Clone this repository
 
 ```
 git clone https://github.com/incrementum/vscode-extension-scala-mill.git
