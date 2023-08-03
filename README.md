@@ -17,13 +17,13 @@ git clone https://github.com/incrementum/vscode-extension-scala-mill.git
 ```
 #### Requirements
 
-Currently, a component of this build, ```mill-bundler```, does not yet work with mill version 0.11, so this project requires mill:0.10.2:
+**Mill 0.10.12** Currently, a component of this build, ```mill-bundler```, does not yet work with mill version 0.11, so this project requires mill:0.10.2:
 ```sh
 cs install mill:0.10.12 # using coursier to install mill version 0.10.12
 mill --version
 ```
 
-The integration with [vscode's extension api](https://code.visualstudio.com/api) relies on the [npm](https://www.npmjs.com/) package manager and the subsequent installation of [typescript](https://www.typescriptlang.org/) and the vscode api:
+**NPM, TYPESCRIPT** The integration with [vscode's extension api](https://code.visualstudio.com/api) relies on the [npm](https://www.npmjs.com/) package manager and the subsequent installation of [typescript](https://www.typescriptlang.org/) and the vscode api:
 
 ```sh
  sudo apt install nodejs npm # installing on ubuntu
