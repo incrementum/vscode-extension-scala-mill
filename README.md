@@ -42,7 +42,7 @@ code ./vscode/launch.json # specifies to launch vscode's "extension host" with t
 
 ```sh
 code ./app/src/extension.scala # note the correspondence of the registered command with the contributed command in `package.json`
-code ./build.sc # become familiar with `scalablytyped` and `mill-builder` following the links the respective documentation
+code ./build.sc # become familiar with `scalablytyped` and `mill-builder` following the links to the respective documentation
 ```
 
 #### Build the extension:
