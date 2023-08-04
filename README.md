@@ -34,7 +34,7 @@ Watch this repository for updates.
  sudo apt install nodejs npm # installing on ubuntu
  npm install # run in repo base directory; installs packages specified in `package.json`, which include `typescript` and `vscode`, underneath a new `npm_modules` directory
 ```
-
+> **_NOTE:_** The build will check for the existence of the ```node_modules``` directory and if the directory does not exist, will perform ```npm install``` to initialize it with the `typescript` and `vscode` modules.
 
 #### Inspect the extension's configuration and vscode's launch configuration:
 ```sh
