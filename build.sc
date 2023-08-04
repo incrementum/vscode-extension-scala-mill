@@ -14,6 +14,7 @@
  [mill](https://github.com/com-lihaoyi/mill)
 */
 import mill._
+import mill.define._
 import mill.scalalib._
 import mill.scalajslib._
 import mill.scalajslib.api._ // ModuleKind
@@ -59,6 +60,14 @@ object versions {
 object scalablyTypedModule extends ScalaJSModule with ScalablyTyped {
   def scalaVersion = versions.scalaVersion
   def scalaJSVersion= versions.scalaJSVersion
+  override def scalablyTypedBasePath: T[os.Path] = T {
+    // make sure dir `node_modules` exists and initally required modules 
+    // as per `package.json` are installed
+    if (!os.isDir(os.pwd / "node_modules")) { 
+      os.proc("npm", "install").call(cwd = os.pwd)
+    }
+    T.workspace
+  }
 }
 
 object app extends ScalaJSRollupModule {
