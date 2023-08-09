@@ -39,4 +39,4 @@ object extension:
    */
   object commands:
     def showHello: js.Function1[Any, Thenable[UndefOr[String]]] =
-      in => mod.window.showInformationMessage( s"Hello World!" )
+      in => mod.window.showInformationMessage(s"Hello World!")
