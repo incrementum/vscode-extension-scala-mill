@@ -17,6 +17,7 @@ cs install mill:0.10.12 # using coursier to install mill
 mill --version # prints the version and re-starts mill server
 
 # make sure npm is installed
+sudo apt-get update
 sudo apt install nodejs npm
 
 # clone this repo
