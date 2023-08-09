@@ -38,7 +38,7 @@ In **vscode**:
 In the **extension host window**: 
 - **```ctrl+shift+p```** to open the command panel
 - invoke the **"Hello World"** command
-- observe the information pop window with the "Hello World" message in the bottom right corner
+- observe in the bottom right corner the information pop window with the "Hello World" message
 - make changes to the extension, re-compile; note the extension host window reloads with the changes applied
 
 ## How it works
