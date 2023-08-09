@@ -14,18 +14,19 @@ object extension:
    * Register commands
    */
   @JSExportTopLevel( "activate" )
-  def activate( context: ExtensionContext ) =
-    List(
-      ( "vscmill.helloWorld", commands.showHello )
-    ).foreach {
-      case ( name, fun ) =>
-        context.subscriptions.push(
-          mod.commands
-            .registerCommand( name, fun )
-            .asInstanceOf[Dispose]
-        )
-    }
-    println( "vscmill extension activated." )
+  def activate( context: ExtensionContext ) = List(
+    ( "vscmill.helloWorld", commands.showHello )
+  ).foreach {
+    case ( name, fun ) =>
+      context.subscriptions.push(
+        mod.commands
+          .registerCommand( name, fun )
+          .asInstanceOf[Dispose]
+      )
+
+    // reload the extension automatically on code changes
+    dev.reloader.reloadOnChange
+  }
 
   /**
    * Deactivate extension
