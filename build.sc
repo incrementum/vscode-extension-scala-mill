@@ -74,5 +74,8 @@ object app extends ScalaJSRollupModule {
   def scalaVersion = versions.scalaVersion
   def scalaJSVersion= versions.scalaJSVersion
   def moduleDeps = Seq(scalablyTypedModule)
-  def moduleKind = T { ModuleKind.CommonJSModule }
+  def moduleKind = T { ModuleKind.CommonJSModule }  
+  def ivyDeps = Agg(
+    ivy"net.exoego:scala-js-nodejs-v16_sjs1_2.13:0.14.0"
+  )
 }
