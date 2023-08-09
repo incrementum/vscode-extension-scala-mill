@@ -71,12 +71,3 @@ an instruction to reload the extension when its source code changes.
 * [vscode | Your First Extension](https://code.visualstudio.com/api/get-started/your-first-extension)
 * [microsoft vscode extension github: Hello World Minimal Sample](https://github.com/Microsoft/vscode-extension-samples/tree/main/helloworld-minimal-sample)
 * [pme123 sbt-based port of Hello World](https://github.com/pme123/vscode-scalajs-hello)
-
-
-
-
-
-
-
-
-
