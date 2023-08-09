@@ -11,6 +11,7 @@ to **Scala** with **Mill**, leveraging [mill-scalablyTyped](https://github.com/l
 
 ## Quick Start (5 mins)
 
+### Install Requirements and Compile the Extension
 
 ```sh
 # install the correct version of mill, `mill-bundler` still requires v0.10.12
