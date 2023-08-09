@@ -14,19 +14,20 @@ object extension:
    * Register commands
    */
   @JSExportTopLevel( "activate" )
-  def activate( context: ExtensionContext ) = List(
-    ( "vscmill.helloWorld", commands.showHello )
-  ).foreach {
-    case ( name, fun ) =>
-      context.subscriptions.push(
-        mod.commands
-          .registerCommand( name, fun )
-          .asInstanceOf[Dispose]
-      )
+  def activate( context: ExtensionContext ) =
 
-    // reload the extension automatically on code changes
-    dev.reloader.reloadOnChange
-  }
+    val contributedCommands = List( ( "vscmill.helloWorld", commands.showHello ) )
+
+    contributedCommands.foreach {
+      case ( name, fun ) =>
+        context.subscriptions.push(
+          mod.commands
+            .registerCommand( name, fun )
+            .asInstanceOf[Dispose]
+        )
+    }
+
+    dev.reload.onChange
 
   /**
    * Deactivate extension
@@ -39,4 +40,4 @@ object extension:
    */
   object commands:
     def showHello: js.Function1[Any, Thenable[UndefOr[String]]] =
-      in => mod.window.showInformationMessage(s"Hello World!")
+      in => mod.window.showInformationMessage( s"Hello World!" )
