@@ -31,6 +31,8 @@ code .
 mill -w app.fastOpt 
 ```
 
+### Use the Extension
+
 In **vscode**:
 - ```F5``` to open the extension host window
 
