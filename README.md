@@ -1,4 +1,4 @@
-# vscode-extension-scala-mill: helloworld-minimal
+# vscode-extension-scala-mill
 
 **vscode extension** 'Hello World' that reloads when its code changes, written in **Scala** and built with **Mill**. 
 ##
