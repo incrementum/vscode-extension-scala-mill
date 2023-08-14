@@ -57,7 +57,7 @@ an instruction to reload the extension when its source code changes.
 
 **[```./app/src/dev/reload.scala```]** contains code to trigger the reloading of the vscode extension host window when changes to the file containing the extension's javascript code are detected. This file is updated whenever ```mill -w app.fastOpt``` re-generates it, which in turn happens on any saved changes to the underlying scala sources.
 
-**[```./build.sc```]** contains in-line comments explaining its makeup
+**[```./build.sc```]** contains in-line comments explaining its makeup, but its main feature is provided by `scalablytyped` which creates and ivy local caches scalajs facades for all the npm module dependencies listed in package.json. These facades are also added to the `jsdeps` of the scalajsmodule.
 
 ## How to develop new extension behavior
 
