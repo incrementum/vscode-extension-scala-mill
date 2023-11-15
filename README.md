@@ -12,7 +12,7 @@ to **Scala** with **Mill**, leveraging [mill-scalablyTyped](https://github.com/l
 ## Quick Start (5 mins)
 
 ```sh
-# install the correct version of mill, `mill-bundler` still requires v0.10.12
+# install the correct version of mill, the current release of `mill-bundler` still requires v0.10.12
 # (you can work around this limitiation by cloning and building a later commit of
 # `mill-bundler`, which already supports the current version of mill)
 cs install mill:0.10.12 # using coursier to install mill
