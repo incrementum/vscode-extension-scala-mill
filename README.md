@@ -1,6 +1,6 @@
 # vscode-extension-scala-mill
 
-Ever wanted to write a vscode extension in scala that also supports live reloading while you code? Here you go...
+Ever wanted to write a vscode extension in scala that also supports live reloading while you code? Here you go... enjoy!
 
 
 **vscode extension** 'Hello World' that reloads when its code changes (live reloading), written in **Scala** and built with **Mill**. 
