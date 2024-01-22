@@ -1,9 +1,6 @@
 /**
  * vscode-extension-sample-scala-mill: helloworld-minimal
  * 
- * Requires mill version 0.10.12  (`mill-bundler` does not yet support 
- * v0.11.x as of 2023-08)
- * 
  * Based on:
  * [Your First Extension](https://code.visualstudio.com/api/get-started/your-first-extension)
  * [Microsoft Hello World Minimal Sample](https://github.com/Microsoft/vscode-extension-samples/tree/main/helloworld-minimal-sample)
@@ -47,14 +44,15 @@ import $ivy.`com.github.lolgab::mill-scalablytyped::latest.release`, com.github.
     webpackLibraryName
     jsDeps
 */
-import $ivy.`io.github.nafg.millbundler::jsdeps::0.1.0`, io.github.nafg.millbundler.jsdeps._
-import $ivy.`io.github.nafg.millbundler::millbundler::0.1.0`, io.github.nafg.millbundler._
+import $ivy.`io.github.nafg.millbundler::jsdeps::latest.release`, io.github.nafg.millbundler.jsdeps._
+import $ivy.`io.github.nafg.millbundler::millbundler::latest.release`, io.github.nafg.millbundler._
+
 
 /// MODULES
 
 object versions {
-  def scalaVersion = "3.3.0"
-  def scalaJSVersion= "1.13.1"  
+  def scalaVersion = "3.3.1"
+  def scalaJSVersion= "1.15.0"  
 }
 
 object scalablyTypedModule extends ScalaJSModule with ScalablyTyped {
@@ -75,7 +73,7 @@ object app extends ScalaJSRollupModule {
   def scalaJSVersion= versions.scalaJSVersion
   def moduleDeps = Seq(scalablyTypedModule)
   def moduleKind = T { ModuleKind.CommonJSModule }  
-  def ivyDeps = Agg(
-    ivy"net.exoego:scala-js-nodejs-v16_sjs1_2.13:0.14.0" // required for `io.scalajs.nodejs.fs.Fs` (watching for code changes)
+  def ivyDeps = Agg(   
+    ivy"net.exoego:scala-js-nodejs-v16_sjs1_2.13:latest.release" // required for `io.scalajs.nodejs.fs.Fs` (watching for code changes)
   )
 }
