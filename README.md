@@ -24,6 +24,9 @@ sudo apt install nodejs npm
 git clone https://github.com/incrementum/vscode-extension-scala-mill.git
 cd vscode-extension-scala-mill
 
+# have mill generate the initial .bloop directory for metals' use
+mill mill.contrib.bloop.Bloop/install
+
 # open vscode and have metals import the build file
 code . 
 
