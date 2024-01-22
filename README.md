@@ -4,7 +4,6 @@ Ever wanted to write a vscode extension in scala that also supports hot reloadin
 
 
 **vscode extension** 'Hello World' that reloads when its code changes (hot/live reloading), written in **Scala** and built with **Mill**. 
-##
 
 ##
 **Credits:** This project ports Microsoft's vscode extension [```helloworld-minimal-sample```](https://github.com/Microsoft/vscode-extension-samples/tree/main/helloworld-minimal-sample)
