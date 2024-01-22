@@ -1,9 +1,11 @@
 # vscode-extension-scala-mill
 
+Ever wanted to write a vscode extension in scala that also supports hot reloading while you code? Here you go...
+
+
 **vscode extension** 'Hello World' that reloads when its code changes (hot/live reloading), written in **Scala** and built with **Mill**. 
 ##
 
-**Keywords:** vscode, vscode extension, scala, scalajs, mill, scalablytyped, mill-builder, hot reloading, live reloading
 ##
 **Credits:** This project ports Microsoft's vscode extension [```helloworld-minimal-sample```](https://github.com/Microsoft/vscode-extension-samples/tree/main/helloworld-minimal-sample)
 to **Scala** with **Mill**, leveraging [mill-scalablyTyped](https://github.com/lolgab/mill-scalablytyped) (for deriving scala facades to vscode's npm-based api) and [mill-bundler](https://github.com/nafg/mill-bundler) (for bundling of scalajs-derived artifacts).
@@ -12,11 +14,8 @@ to **Scala** with **Mill**, leveraging [mill-scalablyTyped](https://github.com/l
 ## Quick Start (5 mins)
 
 ```sh
-# install the correct version of mill, the current release of `mill-bundler` still requires v0.10.12
-# (you can work around this limitiation by cloning and building a later commit of
-# `mill-bundler`, which already supports the current version of mill)
-cs install mill:0.10.12 # using coursier to install mill
-mill --version # prints the version and re-starts mill server
+# use coursier (cs) to install mill
+cs install mill
 
 # make sure npm is installed
 sudo apt-get update
