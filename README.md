@@ -47,6 +47,8 @@ In the **extension host window**:
 
 ## How it works
 
+Scala compiles to JavaScript when using [scala.js](https://www.scala-js.org/) and since vscode extension can also be written in JavaScript, writing a vscode extension in scala becomes an exercise of integrating our scala code with the vscode api and all the other npm modules we would like to use. Fortunately, [mill-scalablyTyped](https://github.com/lolgab/mill-scalablytyped) automates the creation of scala facades for all the npm modules we specify, including the ones for the vscode api itself and all the others we want to use. Finally, [mill-bundler](https://github.com/nafg/mill-bundler) packages all the artifacts. Find below more detailed descriptions of what role the various files play. Most of which you will be familiar with, if you have gone through Microsoft's basic tutorial ["vscode | Your First Extension"](https://code.visualstudio.com/api/get-started/your-first-extension).
+
 **[npm, typescript, vscode api]** The integration with vscode's extension api relies on the [npm](https://www.npmjs.com/) package manager and the subsequent installation of the [typescript](https://www.typescriptlang.org/) and [vscode](https://code.visualstudio.com/api) modules.
 
 > If the ```./node_modules``` directory does not yet exist, the build will perform ```npm install``` to install the `typescript` and `vscode` modules as specified in the ```./package.json``` file.
