@@ -1,8 +1,9 @@
 # vscode-extension-scala-mill
 
-Ever wanted to write a **vscode extension in scala** that also supports live reloading while you code? Here you go...
-
-
+Ever wanted to write a **vscode extension in scala** that also supports live reloading while you code?
+ <br/><br/>
+Here you go...
+ <br/><br/>
 **vscode extension** 'Hello World' that reloads when its code changes (live reloading), written in **Scala** and built with **Mill**. 
 
 ##
@@ -47,11 +48,13 @@ In the **extension host window**:
 
 ## How it works
 
-Scala compiles to JavaScript when using [scala.js](https://www.scala-js.org/) and since vscode extension can also be written in JavaScript, writing a vscode extension in scala becomes an exercise of integrating our scala code with the vscode api and any other npm modules we would like to call from scala. 
+Scala compiles to JavaScript when using [scala.js](https://www.scala-js.org/) and since vscode extension can also be written in JavaScript, writing a vscode extension in scala becomes an exercise of integrating our scala code with the vscode api and any other npm modules we would like to call. 
  <br/><br/>
 Fortunately, [mill-scalablyTyped](https://github.com/lolgab/mill-scalablytyped) automates the creation of scala facades for all the npm modules we specify in ```./package.json```, including the ones that make up the vscode api itself and any other modules we want to use. 
  <br/><br/>
-Finally, [mill-bundler](https://github.com/nafg/mill-bundler) packages all the artifacts. Find below more detailed descriptions of what role the various files play. Most of which you will be familiar with if you have gone through Microsoft's basic tutorial ["vscode | Your First Extension"](https://code.visualstudio.com/api/get-started/your-first-extension) first (highly recommended).
+Finally, [mill-bundler](https://github.com/nafg/mill-bundler) packages all the artifacts. 
+ <br/><br/>
+Find below more detailed descriptions of what role the various files play. Most of which you will be familiar with if you have gone through Microsoft's basic tutorial ["vscode | Your First Extension"](https://code.visualstudio.com/api/get-started/your-first-extension) first (highly recommended).
 
 **[npm, typescript, vscode api]** The integration with vscode's extension api relies on the [npm](https://www.npmjs.com/) package manager and the subsequent installation of the [typescript](https://www.typescriptlang.org/) and [vscode](https://code.visualstudio.com/api) modules.
 
