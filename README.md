@@ -52,7 +52,7 @@ Fortunately, [mill-scalablyTyped](https://github.com/lolgab/mill-scalablytyped) 
  <br/><br/>
 Finally, [mill-bundler](https://github.com/nafg/mill-bundler) packages all the artifacts. 
  <br/><br/>
-Find below more detailed descriptions of what role the various files play. Most of which you will be familiar with if you have gone through Microsoft's basic tutorial ["vscode | Your First Extension"](https://code.visualstudio.com/api/get-started/your-first-extension) first (highly recommended).
+Find below more detailed descriptions of what roles the various files play. Most of which you will be familiar with if you have gone through Microsoft's basic tutorial ["vscode | Your First Extension"](https://code.visualstudio.com/api/get-started/your-first-extension) first (highly recommended).
 
 **[npm, typescript, vscode api]** The integration with vscode's extension api relies on the [npm](https://www.npmjs.com/) package manager and the subsequent installation of the [typescript](https://www.typescriptlang.org/) and [vscode](https://code.visualstudio.com/api) modules.
 
