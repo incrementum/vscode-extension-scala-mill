@@ -52,7 +52,7 @@ Scala compiles to JavaScript when using [scala.js](https://www.scala-js.org/) an
  <br/><br/>
 Fortunately, [mill-scalablyTyped](https://github.com/lolgab/mill-scalablytyped) automates the creation of scala facades for all the npm modules we specify in ```./package.json```, including the ones that make up the vscode api itself. For this purpose, the build includes a ```scalablyTypedModule``` that the main ```app``` module depends on. 
  <br/><br/>
-During its initialization upon each build run, the ```scalablyTypedModule``` scans the ```node_modules``` directory for npm modules and creates scala.js facade libraries for each, so that the npm functionality can be called from scala more easily. Conveniently, the facade libraries are then transparently added to ivy's local cache and to mill's `ivyDeps`. 
+During its initialization upon each build run, the ```scalablyTypedModule``` scans the ```node_modules``` directory for npm modules and creates a scala.js facade library for each, so that the npm functionality can be called from scala more easily. Conveniently, the facade libraries are then transparently added to ivy's local cache and to mill's `ivyDeps`. 
  <br/><br/>
 The ```app``` module's dependency on the ```scalablyTypedModule``` ensures that the main app's dependencies on any npm modules specified in ```package.json``` are fulfilled. To make this work more seamless, the ```scalablyTypedModule``` also checks for the presence of the ```node_modules``` directory, and if it does not exist, calls ```npm install```, which by npm convention creates this directory and installs all the npm modules specified in ```package.json``` there. 
  <br/><br/>
