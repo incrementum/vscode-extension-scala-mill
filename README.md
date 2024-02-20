@@ -50,7 +50,7 @@ In the **extension host window**:
 
 Scala compiles to JavaScript when using [scala.js](https://www.scala-js.org/) and since vscode extension can also be written in JavaScript, writing a vscode extension in scala becomes an exercise of integrating our scala code with the vscode api and any other npm modules we would like to call. 
  <br/><br/>
-Fortunately, [mill-scalablyTyped](https://github.com/lolgab/mill-scalablytyped) automates the creation of scala facades for all the npm modules we specify in ```./package.json```, including the ones that make up the vscode api itself and any other modules we want to use. For this purpose, the build includes a ```scalablyTypedModule``` that the main ```app``` module depends on. 
+Fortunately, [mill-scalablyTyped](https://github.com/lolgab/mill-scalablytyped) automates the creation of scala facades for all the npm modules we specify in ```./package.json```, including the ones that make up the vscode api itself. For this purpose, the build includes a ```scalablyTypedModule``` that the main ```app``` module depends on. 
  <br/><br/>
 During its initialization upon each build run, the ```scalablyTypedModule``` scans the ```node_modules``` directory for npm modules and creates scala.js facade libraries for each, so that the npm functionality can be called from scala more easily. Conveniently, the facade libraries are then transparently added to ivy's local cache and to mill's `ivyDeps`. 
  <br/><br/>
