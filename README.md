@@ -56,7 +56,8 @@ During its initialization upon each build run, the ```scalablyTypedModule``` sca
  <br/><br/>
 The ```app``` module's dependency on the ```scalablyTypedModule``` ensures that the main app's dependencies on any npm modules specified in ```package.json``` are fulfilled. To make this work more seamless, the ```scalablyTypedModule``` also checks for the presence of the ```node_modules``` directory, and if it does not exist, calls ```npm install```, which by npm convention creates this directory and installs all the npm modules specified in ```package.json``` there. 
  <br/><br/>
-> Note that the very first build might take some time to complete, due to the scala facades creation. 
+> Note that the very first build might take some time to complete, due to the scala facades creation.
+
  <br/><br/>
 The net effect is that the main ```app``` modules's dependencies are now the sum of the explicitly specified ```ivyDeps``` underneath the ```app``` module and the transparently added scala.js facades of the npm modules specified in ```package.json```. 
  <br/><br/>
