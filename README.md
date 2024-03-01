@@ -6,7 +6,7 @@ A **'Hello World' vscode extension** that reloads when its code changes (live re
 
 ##
 **Credits:** This project ports Microsoft's vscode extension [```helloworld-minimal-sample```](https://github.com/Microsoft/vscode-extension-samples/tree/main/helloworld-minimal-sample)
-to **Scala** with **Mill**, leveraging [mill-scalablyTyped](https://github.com/lolgab/mill-scalablytyped) (for deriving scala facades to vscode's npm-based api) and [mill-bundler](https://github.com/nafg/mill-bundler) (for bundling of scalajs-derived artifacts).
+to **Scala** with **Mill**, leveraging [mill-scalablyTyped](https://github.com/lolgab/mill-scalablytyped) (for deriving scala facades to vscode's npm-based api) and [mill-bundler](https://github.com/nafg/mill-bundler).
 
 
 ## Quick Start (5 mins)
