@@ -1,4 +1,5 @@
 # vscode-extension-scala-mill
+### vscode extension in scala
 
 Ever wanted to write a **vscode extension in scala** that also supports live reloading while you code?
 <br/><br/>
